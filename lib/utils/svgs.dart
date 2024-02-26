@@ -6,3 +6,6 @@ const notificationSVG = "assets/svgs/notification.svg";
 const addSVG = "assets/svgs/add.svg";
 const cameraSVG = "assets/svgs/camera.svg";
 const locationSVG = "assets/svgs/location.svg";
+const onboardingFirstSVG = "assets/svgs/onboarding_one.svg";
+const onboardingSecondSVG = "assets/svgs/onboarding_two.svg";
+const onboardingThirdSVG = "assets/svgs/onboarding_three.svg";

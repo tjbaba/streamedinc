@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:streamedinc/screens/bottom_bar_screen.dart';
+import 'package:streamedinc/screens/on_boarding/on_boarding_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const BottomBarScreen(),
+      home: const OnBoarding(),
     );
   }
 }
