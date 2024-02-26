@@ -169,7 +169,7 @@ class PageThree extends StatelessWidget {
             buildBottomSection(
                 context,
                 onTap,
-                (){},
+                () {},
                 2,
                 'Promote Your Business',
                 'Our platform is a powerful tool for businesses as well! Advertise your products or services to a large and engaged audience,'),
@@ -249,9 +249,9 @@ Row buildSkipNextButton(Function onTap, Function onSkip) {
           child: const Padding(
             padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 60),
             child: Text(
-              'NEXT',
+              'Next',
               style: TextStyle(
-                  color: backGroundColor,
+                  color: Colors.white,
                   fontSize: 14,
                   fontWeight: FontWeight.w700),
             ),
@@ -275,7 +275,7 @@ Row buildIndicator(int i) {
             width: 8,
             height: 8,
             decoration: BoxDecoration(
-                color: index == i ? lightGreen : Colors.black,
+                color: index == i ? lightGreen : Colors.grey.withOpacity(0.5),
                 borderRadius: BorderRadius.circular(20)),
           ),
         ),
