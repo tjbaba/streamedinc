@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:streamedinc/screens/bottom_bar_screen.dart';
 import 'package:streamedinc/screens/on_boarding/on_boarding_screen.dart';
 
 void main() {

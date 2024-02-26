@@ -111,8 +111,8 @@ class PageOne extends StatelessWidget {
                 'Discover Great '
                     'Deals',
                 'Have something to sell? Just snap, upload, and price your items. We\'ve made the process simple and quick. Get your items in front of buyers in no time!'),
-            SvgPicture.asset(
-              onboardingFirstSVG,
+            Image.asset(
+              "assets/images/image01.png",
             ),
           ],
         ),
@@ -143,8 +143,8 @@ class PageTwo extends StatelessWidget {
                 'Effortless '
                     'Selling',
                 'Have something to sell? Just snap, upload, and price your items. We\'ve made the process simple and quick. Get your items in front of buyers in no time!'),
-            SvgPicture.asset(
-              onboardingSecondSVG,
+            Image.asset(
+              "assets/images/Image02.png",
             ),
           ],
         ),
@@ -173,8 +173,8 @@ class PageThree extends StatelessWidget {
                 2,
                 'Promote Your Business',
                 'Our platform is a powerful tool for businesses as well! Advertise your products or services to a large and engaged audience,'),
-            SvgPicture.asset(
-              onboardingSecondSVG,
+            Image.asset(
+              "assets/images/Image03.png",
             ),
           ],
         ),
@@ -196,6 +196,7 @@ Positioned buildBottomSection(
     child: Container(
       width: MediaQuery.of(context).size.width,
       height: 400,
+      padding: const EdgeInsets.symmetric(horizontal: 20),
       color: primaryColor,
       child: Center(
         child: Column(

@@ -12,9 +12,9 @@ class PostDataSource {
 
        if (response.data != null) {
          final model = PostModel.fromJson(response.data);
-         print("+_+_+_+_ ${model.posts?[0].images}");
+         log("+_+_+_+_ ${model.posts?[0].images}");
        } else {
-         print('Response data is null');
+         log('Response data is null');
        }
      } catch (e) {
        log(e.toString());

@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+import 'package:streamedinc/models/post_model.dart' as p;
 import 'package:streamedinc/screens/chat/chat_screen.dart';
 import 'package:streamedinc/utils/colors.dart';
 import 'package:streamedinc/utils/gradients.dart';
 
 class ContentArea extends StatelessWidget {
-  const ContentArea({super.key});
+  final p.Post post;
+  const ContentArea({super.key, required this.post});
 
   @override
   Widget build(BuildContext context) {
@@ -18,33 +19,37 @@ class ContentArea extends StatelessWidget {
         child:  Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              "Macbook Air 2013",
-              style: TextStyle(
+             Text(
+              "${post.postTitle}",
+              style: const TextStyle(
                   fontSize: 16,
                   color: Colors.white,
                   fontWeight: FontWeight.w700),
             ),
-            const Text(
-              "AED 1,200",
-              style: TextStyle(
+             Text(
+              "AED ${post.price}",
+              style: const TextStyle(
                   color: orangeColor,
                   fontSize: 20,
                   fontWeight: FontWeight.bold),
             ),
-            const Text(
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit... #Lorem #ipsum #amet",
-              style: TextStyle(color: Colors.white60),
+             Text(
+              "${post.description}",
+              style: const TextStyle(color: Colors.white60),
             ),
-            const Row(
+            Text(
+              "${post.hashtagTitles}",
+              style: const TextStyle(color: Colors.white60),
+            ),
+             Row(
               children: [
-                Image(
+                const Image(
                   image: AssetImage("assets/images/uae_flag.png"),
                   height: 20,
                 ),
                 Text(
-                  " Dubai, United Arab Emirates",
-                  style: TextStyle(
+                  " ${post.country}",
+                  style: const TextStyle(
                       color: Colors.white, fontWeight: FontWeight.bold),
                 )
               ],
